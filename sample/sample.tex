@@ -1,0 +1,23 @@
+\documentclass{ltjsarticle}
+\usepackage{amsmath} 
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{align}
+    \log 
+\end{align}
+
+\begin{tikzpicture}
+ \draw[->,>=stealth,semithick] (-2*pi,0)--(2*pi,0)node[above]{$x$}; %x軸
+ \draw[->,>=stealth,semithick] (0,-2)--(0,2)node[right]{$y$}; %y軸
+ \draw[very thick,samples=100] plot(\x,{sin(\x r)})node[right]{$y=sinx$};
+\end{tikzpicture}
+
+\begin{tikzpicture}
+    \draw[->,>=stealth,semithick] (0,0)--(5*pi,0)node[above]{$x$}; %x軸
+    \draw[->,>=stealth,semithick] (0,-5)--(0,5)node[right]{$y$}; %y軸
+    \draw[very thick,samples=100,domain=0:4*pi,variable=\t] plot({\t-sin(\t r)},{1-cos(\t r)});
+\end{tikzpicture}
+
+\end{document}
