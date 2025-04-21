@@ -72,9 +72,10 @@
 \newpage
 
 \begin{flalign*}
-  \int \tan x \,dx &= \int \frac{\sin x}{\cos x} \,dx \: \left(\because \tan x = \frac{\sin x}{\cos x} \right) \\
+  \int \tan x \,dx &\  \tanの一次式→ \frac{\sin x}{\cos x}で一次式に \\
+  \int \tan x \,dx &= \int \frac{\sin x}{\cos x} \,dx \: 分数関数→分母の微分を考える \\
   &= - \int \frac{- \sin x}{\cos x} \,dx \\
-  &= - \log \left\lvert \cos x \right\rvert + C \: \left(\because \int \frac{f' \left(x \right)}{f \left(x \right)} \,dx = \log \left\lvert f \left(x \right) \right\rvert + C \right) \\
+  &= - \log \left\lvert \cos x \right\rvert + C \:  \\
 \end{flalign*}
 
 \newpage
@@ -101,15 +102,17 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\sin^2 x} &= \int \frac{dx}{\cos^2 \left(\frac{\pi}{2} - x \right)} \:\left(\because \sin x = \cos\left(\frac{\pi}{2}-x \right) \right) \\
+  \int \frac{dx}{\sin^2 x} \,dx & \ \sinがcosだったら都合がいい→\frac{\pi}{2}でcosに \\ 
+  \int \frac{dx}{\sin^2 x} &= \int \frac{dx}{\cos^2 \left(\frac{\pi}{2} - x \right)} \\
   &= - \tan\left(\frac{\pi}{2} - x \right) + C \\
-  &= - \frac{1}{\tan x} + C \:\left(\because \tan x = \tan\left(\frac{\pi}{2}-x \right) \right) \\
+  &= - \frac{1}{\tan x} + C \ \\
 \end{flalign*}
 
 \newpage
 
 \begin{flalign*}
-  \int_{-1}^{1} \sqrt{1-x^2} \,dx \\
+  \int_{-1}^{1} \sqrt{1-x^2} \,dx \quad \sqrt{|\qquad|^2} &=|\qquad| としたい.\\
+  ここで,1-\sin^2t=\cos^2tである.また,1-x^2\ge0より,-1\le x \le1 であるから, x=\sin x とおける. \\
   x &= \sin t \: とおく \\
   dx &= \cos t \,dt \\
   \int_{-1}^{1} \sqrt{1-x^2} \,dx &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \sqrt{1-\sin^2 t} \cos t \,dt \\
@@ -330,5 +333,7 @@
 \end{flalign*}
 
 \newpage
+\begin{flalign*}
 
+\end{flalign*}
 \end{document}
