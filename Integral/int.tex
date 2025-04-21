@@ -72,8 +72,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \tan x \,dx &\  \tanの一次式→ \frac{\sin x}{\cos x}で一次式に \\
-  \int \tan x \,dx &= \int \frac{\sin x}{\cos x} \,dx \: 分数関数→分母の微分を考える \\
+  \int \tan x \,dx &\  \quad\tanの一次式→ \frac{\sin x}{\cos x}で一次式に \\
+  \int \tan x \,dx &= \int \frac{\sin x}{\cos x} \,dx \:\quad 分数関数→分母の微分を考える \\
   &= - \int \frac{- \sin x}{\cos x} \,dx \\
   &= - \log \left\lvert \cos x \right\rvert + C \:  \\
 \end{flalign*}
@@ -81,8 +81,8 @@
 \newpage
 
 \begin{flalign*}
-  \int_{- \sqrt{3}}^{\sqrt{3}} \sqrt{3-x^2} \,dx \\
-  x &= \sqrt{3} \sin t \: とおく \\
+  \int_{- \sqrt{3}}^{\sqrt{3}} \sqrt{3-x^2} \,dx\quad \sqrt{a^2-x^2}を含む→x=a\sin tとおく \\
+  x &= \sqrt{3} \sin t \: とする \\
   dx &= \sqrt{3} \cos t \,dt \\
   \int_{- \sqrt{3}}^{\sqrt{3}} \sqrt{3-x^2} \,dx &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \sqrt{3- \left(\sqrt{3} \sin t \right)^2} \sqrt{3} \cos t \,dt \\
   &= 3 \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \sqrt{1 - \sin^2 t} \cos t \,dt \\
@@ -113,12 +113,12 @@
 \begin{flalign*}
   \int_{-1}^{1} \sqrt{1-x^2} \,dx \quad \sqrt{|\qquad|^2} &=|\qquad| としたい.\\
   ここで,1-\sin^2t=\cos^2tである.また,1-x^2\ge0より,-1\le x \le1 であるから, x=\sin x とおける. \\
-  x &= \sin t \: とおく \\
+  x &= \sin t \: とする \\
   dx &= \cos t \,dt \\
   \int_{-1}^{1} \sqrt{1-x^2} \,dx &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \sqrt{1-\sin^2 t} \cos t \,dt \\
   &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \left\lvert \cos t \right\rvert \cos t \,dt \\
-  &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^2 t \,dt \:\left(\because - \frac{\pi}{2} \leq x \leq \frac{\pi}{2} \Rightarrow 0 \leq \forall \cos x \right) \\
-  &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1+\cos 2t}{2} \,dt \:\left(\because \cos^2 x = \frac{1 + \cos 2x}{2} \:\:\:\: \, c.f. \sin^2 x = \frac{1 - \cos 2x}{2} \right) \\
+  &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^2 t \,dt \\
+  &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1+\cos 2t}{2} \,dt \\
   &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \left(\frac{1}{2}+\frac{\cos 2t}{2} \right) \,dt \\
   &= \frac{1}{2}\left[t+\frac{1}{2}\sin 2t \right]_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \\
   &= \frac{\pi}{2}
@@ -132,7 +132,8 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{1} \frac{\,dx}{1+x^2} \\
+  \int_{0}^{1} \frac{\,dx}{1+x^2} \quad分母を単項式にしたい.\\
+  ここで,1+\tan^2t=\frac{1}{\cos^2t}である.また,(\tan t)'=\frac{1}{\cos^2t}であるから,x=\tan tとする\\
   x &= \tan t \: とおく \\
   \frac{1}{1+x^2} &= \frac{1}{\cos^2 t} \\
   dx &= \frac{dt}{\cos^2 t} \\
@@ -149,7 +150,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \tan^4 x \,dx &= \int \tan^2 x \tan^2 x \,dx \\
+  \int \tan^4 x \,dx \quad三角関数は2次ごとに分割 \\
+  &= \int \tan^2 x \tan^2 x \,dx \quad \tan^2は\cos^2\\
   &= \int \tan^2 x \left(\frac{1}{\cos^2 x}-1 \right) \,dx \\
   &= \int \frac{\tan^2 x}{\cos^2 x} \,dx - \int \tan^2 x \,dx \\
   &= \frac{1}{3}\tan^3 x -\tan x + x +C \\
@@ -158,7 +160,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \log x \,dx &= \int 1 \cdot \log x \,dx \\
+  \int \log x \,dx \quad \logを含む→部分積分\\
+  &= \int 1 \cdot \log x \,dx \\
   &= x\log x -\int x \cdot \frac{1}{x} \,dx \\
   &= x\log x -x +C \\
 \end{flalign*}
@@ -166,7 +169,9 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx &= \int_{0}^{e} \frac{e^{e-x}}{e^x+e^{e-x}} \,dx \:\left(\because King Property \right) \\
+  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \quad a+b-xを含む,下端が0,指数関数の式→KingProperty \\
+  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx
+  &= \int_{0}^{e} \frac{e^{e-x}}{e^x+e^{e-x}} \,dx \\
   I &= \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \: とすると \\
   2I &= \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx + \int_{0}^{e} \frac{e^{e-x}}{e^x+e^{e-x}} \,dx \\
   &= \int_{0}^{e} \frac{e^x+e^{e-x}}{e^x+e^{e-x}} \,dx \\
@@ -178,7 +183,7 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\sin^4 x} &= \int \frac{dx}{\tan^4 x \cos^4 x} \\
+  \int \frac{dx}{\sin^4 x} &= \int \frac{dx}{\tan^4 x \cos^4 x}\quad f(\sin^2x,\cos^2x,\tan x)→g(\tan x)に \\
   &= \int \frac{1}{\tan^4 x} \left(1+\tan^2 x \right)\frac{dx}{\cos^2 x} \\
   t &= \tan x \: とおく \\
   dt &= \frac{dx}{\cos^2 x} \\
@@ -190,7 +195,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \tan^3 x \,dx &= \int \tan x \cdot \tan^2 x \,dx \\
+  \int \tan^3 x \quad三角関数は2次ごとに分割 \,dx \\
+  \int \tan^3 x \,dx &= \int \tan x \cdot \tan^2 x \,dx\quad\tan^2 xは\cos^2x \\
   &= \int \tan x \left(\frac{1}{\cos^2 x}-1 \right) \,dx \\
   &= \int \frac{\tan x}{\cos^2 x} \,dx - \int \tan x \,dx \\
   &= \frac{1}{2}\tan^2 x + \log \left\lvert \cos x \right\rvert +C \\
@@ -199,6 +205,7 @@
 \newpage
 
 \begin{flalign*}
+  \int \tan^2 x \,dx\quad \tan^2 xは\cos^2x\\
   \int \tan^2 x \,dx &= \int \left(\frac{1}{\cos^2 x}-1 \right) \,dx \\
   &= \tan x -x +C \\
 \end{flalign*}
@@ -206,6 +213,7 @@
 \newpage
 
 \begin{flalign*}
+  \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \quad積分区間の下端が0,三角関数の式で積分区間が{\frac{n\pi}{2}}→King Property\\
   \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx &= \int_{0}^{\frac{\pi}{2}} \sin^2 x \,dx \\
   I &= \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \\
   2I &= \int_{0}^{\frac{\pi}{2}} \cos^2 x + \sin^2 x \,dx \\
@@ -245,7 +253,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\cos^4} &= \int \frac{1}{\cos^2 x} \cdot \frac{1}{\cos^2 x} \,dx \\
+  \int \frac{dx}{\cos^4x}\quad三角関数は2乗ごとに分割\\
+  \int \frac{dx}{\cos^4x} &= \int \frac{1}{\cos^2 x} \cdot \frac{1}{\cos^2 x} \,dx \quad \cos^2xは\tan^2x\\
   &= \int \left(1+\tan^2 x \right) \frac{dx}{\cos^2 x} \\
   &= \frac{1}{3}\tan^3 x + \tan x +C \\
 \end{flalign*}
@@ -253,7 +262,7 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{1} \frac{dx}{x^2+3} \\
+  \int_{0}^{1} \frac{dx}{x^2+3} \quad x^2+a^2を含む→x=a\tan t\\
   x &= \sqrt{3}\tan t \: とおく \\
   dx &= \frac{dt}{\cos^2 t} \\
   \int_{0}^{1} \frac{dx}{x^2+3} &= \int_{0}^{\frac{\pi}{6}} \frac{\frac{\sqrt{3}}{\cos^2 t}}{3\tan^2 t +3} \,dt \\
@@ -270,7 +279,7 @@
 \newpage
 
 \begin{flalign*}
-  \int x^2 \sin x \,dx \\
+  \int x^2 \sin x \,dx \quad x^nf(x)→(瞬間)部分積分\\
   \int x^2 \sin x \,dx &= x^2\sin x+2x\cos x -2\sin x+C \\
 \end{flalign*}
 
@@ -283,6 +292,7 @@
 \newpage
 
 \begin{flalign*}
+  \int \frac{dx}{\cos^3 x} 三角関数は2乗に強い,分母
   \int \frac{dx}{\cos^3 x} &= \int \frac{\cos x}{\cos^4 x} \,dx \\
   &= \int \frac{\cos x}{\left(1-\sin^2 x \right)^2} \,dx \\
   &= \int \frac{dt}{\left(1-t^2 \right)^2} \: \left(t = \sin x \right) \\
