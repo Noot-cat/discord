@@ -289,10 +289,11 @@
   $+$ & $2$   & $-\sin x$ \\
 \end{tabular}
 
-\newpage a
+\newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\cos^3 x} 三角関数は2乗に強い,分母
+  \int \frac{dx}{\cos^3 x} 三角関数は2乗に強い,三角関数や指数関数の分数関数,分母を優先
+  \\→分母分子に同じもの(\cos x)をかける\\
   \int \frac{dx}{\cos^3 x} &= \int \frac{\cos x}{\cos^4 x} \,dx \\
   &= \int \frac{\cos x}{\left(1-\sin^2 x \right)^2} \,dx \\
   &= \int \frac{dt}{\left(1-t^2 \right)^2} \: \left(t = \sin x \right) \\
@@ -308,7 +309,7 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\sin^4 x} \\
+  \int \frac{dx}{\sin^4 x} \quad f(sin^2x,\cos^2x,\tan x)→t=\tan x\\
   t &= \tan x \\
   \cos^2 x &= \frac{1}{1+\tan^2 x} \\
   &= \frac{1}{1+t^2} \\
@@ -326,15 +327,19 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{2\pi} \sqrt{1+\cos x} \,dx &= \int_{0}^{2\pi} \sqrt{2\cos^2 \frac{x}{2}} \,dx \\
-  &= \sqrt{2} \int_{0}^{2\pi} \left\lvert \cos \frac{x}{2} \right\rvert \,dx \\
-  &= 2\sqrt{2} \left[\sin \frac{x}{2} \right]_{0}^{2\pi} \\
-  &= 0 \\
+  \int_{0}^{2\pi} \sqrt{1+\cos x} \,dx \quad \sqrt{|\qquad|^2} &=|\qquad| としたい.\\
+  ここで,1+\cos x=2\cos^2 \frac{x}{2}である.\\
+  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\cos x} \,dx
+  &= \int_{0}^{\frac{\pi}{3}} \sqrt{2\cos^2 \frac{x}{2}} \,dx \\
+  &= \sqrt{2} \int_{0}^{\frac{\pi}{3}} \left\lvert \cos \frac{x}{2} \right\rvert \,dx \\
+  &= 2\sqrt{2} \left[\sin \frac{x}{2} \right]_{0}^{\frac{\pi}{3}} \\
+  &= \sqrt2 \\
 \end{flalign*}
 
 \newpage
 
 \begin{flalign*}
+  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx\quad \sinが\cos だと都合がいい→\frac{\pi}{２}\\
   \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx &= \int_{0}^{\frac{\pi}{3}} \sqrt{1+\cos \left(\frac{\pi}{2}-x\right)} \,dx \\
   &= \sqrt{2} \int_{0}^{\frac{\pi}{3}} \left\lvert \cos \left( \frac{\pi}{4}-\frac{x}{2} \right) \right\rvert \,dx \\
   &= -2\sqrt{2} \left[ \sin \left( \frac{\pi}{4}-\frac{x}{2} \right) \right]_{0}^{\frac{\pi}{3}} \\
@@ -344,6 +349,7 @@
 
 \newpage
 \begin{flalign*}
-
+  \int_{0}^{1} \frac{\,dx}{1+x^3} 分母が因数分解できる→BBB\\
+  \frac{1}{1+x^3}=
 \end{flalign*}
 \end{document}
