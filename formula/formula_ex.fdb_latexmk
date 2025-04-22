@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1745221820.85292 "c:/discord/formula/formula_ex.tex" "formula_ex.pdf" "formula_ex" 1745221823.09765 2
-  "c:/discord/formula/formula_ex.tex" 1745221816 3929 7a47b38c3712cff1f6a5f049883913a1 ""
+["pdflatex"] 1745280779.77034 "c:/discord/formula/formula_ex.tex" "formula_ex.pdf" "formula_ex" 1745280787.11796 2
+  "c:/discord/formula/formula_ex.tex" 1745280764 4021 1e500f9b12bfda90d73ebd54f541afbd ""
   "c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty" 1735701675 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "c:/tools/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo" 1735701677 4807 4a9ac821b9dc64f850693df4c0259635 ""
   "c:/tools/TinyTeX/texmf-dist/tex/latex/tools/.tex" 1735701690 1426 cd6cd1667b1a28ea51b9de2c0b64d363 ""
@@ -11,8 +11,8 @@
   "c:/tools/TinyTeX/texmf-dist/web2c/texmf.cnf" 1735701629 42021 a58d36c7ede3d2fc9f93da62d691ddff ""
   "c:/tools/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1735992664 1973205 173e41e2282b2f6c982497cef9bc26f2 ""
   "c:/tools/TinyTeX/texmf.cnf" 1735701645 903 164c5b127cd0d6dc91abad2f62421ea2 ""
-  "formula_ex.aux" 1745221820 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "formula_ex.tex" 1745221816 3929 7a47b38c3712cff1f6a5f049883913a1 ""
+  "formula_ex.aux" 0 -1 0 "pdflatex"
+  "formula_ex.tex" 1745280764 4021 1e500f9b12bfda90d73ebd54f541afbd ""
   (generated)
   "formula_ex.aux"
   "formula_ex.log"
