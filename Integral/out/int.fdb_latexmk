@@ -1,9 +1,0 @@
-# Fdb version 4
-["lualatex"] 0 "c:/Latex/Integral/int.tex" "out/int.pdf" "int" 0 -1
-  "c:/Latex/Integral/int.tex" 0 -1 0 ""
-  "out/int.aux" 0 -1 0 "lualatex"
-  (generated)
-  "out/int.aux"
-  "out/int.log"
-  "out/int.pdf"
-  (rewritten before read)
