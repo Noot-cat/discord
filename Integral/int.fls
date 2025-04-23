@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 PWD c:/discord/Integral
 INPUT c:/tools/TinyTeX/texmf.cnf
 INPUT c:/tools/TinyTeX/texmf-dist/web2c/texmf.cnf
@@ -518,3 +519,5 @@ INPUT c:/tools/TinyTeX/texmf-dist/tex/latex/tools/.tex
 INPUT c:/tools/TinyTeX/texmf-dist/tex/latex/tools/.tex
 INPUT c:/tools/TinyTeX/texmf-dist/tex/latex/tools/.tex
 INPUT c:/tools/TinyTeX/texmf-dist/tex/latex/tools/.tex
+=======
+>>>>>>> 903d9b073753effb574a828da2196b1de7b4bce2
