@@ -10,16 +10,36 @@
 
 \begin{document}
 
-\begin{flalign*}
-  \sin^2 x + \cos^2 x &= 1 \\
+\begin{flalign*} %関数_性質
+  \cos^2 x + \sin^2 x &= 1 \\
+  1-\sin^2 x &= (1+\sin x)(1-\sin x) \\
+  &= \cos^2 x \\
+  1-\cos^2 x &= (1+\cos x)(1-\cos x) \\
+  &= \sin^2 x \\
   \tan x &= \frac{\sin x}{\cos x} \\
-  \tan^2 x + 1 &= \frac{1}{\cos^2 x} \\
-  \sin 2x &= 2\sin x \cos x \\
-  \cos 2x &= \sin^2 x - \cos^2 x \\
+  1 + \tan^2 x &= \frac{1}{\cos^2 x} \\
+  (\therefore \frac{\cos^2 x}{\cos^2 x}+\frac{\sin^2 x}{\cos^2 x}=\frac{1}{\cos^2 x})\\
+  1 + \frac{1}{\tan^2 x} &= \frac{1}{\sin^2 x} \\
+  \tan^2 x &= \frac{1}{\cos^2 x}-1 \\
+  \cos^2x&=\frac{1}{1+\tan^2x}\\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*} 
+  \sin x &= 2\sin \frac{x}{2} \cos \frac{x}{2} \\
+  \sin x \cos x&=\frac{1}{2}\sin 2x\\
+  \cos^2x - \sin^2x &= \cos 2x \\
+  &=(\cos x - \sin x)(\cos x + \sin x) \\
   &= 1- 2\cos^2 x \\
   &= 2\sin^2 x -1 \\
   \sin^2 x &= \frac{1-\cos 2x}{2} \\
   \cos^2 x &= \frac{1+\cos 2x}{2} \\
+  1+ \cos x&=2 \cos^2 \frac{x}{2} \\
+  1- \cos x&=2 \sin^2 \frac{x}{2} \\
+  \frac{1- \cos x}{1+ \cos x} &= \tan^2 \frac{x}{2}\\
+  \sin 2x =(\sin^2 x)'&=(1-\cos^2 x)'=(-\cos^2 x)'=2 \sin x \cos x \\
+  (\sin x+\cos x)'&=\cos x-\sin x \\
   \sin^{-1} x &= \arcsin x \\
   \cos^{-1} x &= \arccos x \\
   \tan^{-1} x &= \arctan x \\
@@ -27,6 +47,11 @@
   \cosh x &= \frac{e^x+e^{-x}}{2} \\
   \tanh x &= \frac{e^x-e^{-x}}{e^x+e^{-x}} \\
   \cosh^2 x - \sinh^2 x &= 1 \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*} %逆関数
   x &= \sinh t \\
   e^t - e^{-t} -2x &= 0 \\
   e^{2t} -2e^tx -1 &= 0 \\
@@ -41,7 +66,7 @@
 
 \newpage
 
-\begin{flalign*}
+\begin{flalign*} %微分問
   y &= a \\
   y &= x^r \\
   y &= \sqrt{x} \\
@@ -69,7 +94,7 @@
 
 \newpage
 
-\begin{flalign*}
+\begin{flalign*} %積分問
   \int x^r \,dx \: \left(r \neq -1\right) \\
   \int \frac{1}{x} \,dx \\
   \int e^x \,dx \\
@@ -80,6 +105,44 @@
   \int \frac{dx}{\cos^2 x} \\
   \int \frac{dx}{\sin^2 x} \\
   \int a^x \,dx \: \left(a>0, a \neq 1\right) \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*} % 微分解
+  \frac{dy}{dx} &= 0 \\
+  \frac{dy}{dx} &= rx^{r-1} \\
+  \frac{dy}{dx} &= \frac{1}{2\sqrt{x}} \\
+  \frac{dy}{dx} &= -\frac{1}{x^2} \\
+  \frac{dy}{dx} &= \cos x \\
+  \frac{dy}{dx} &= -\sin x \\
+  \frac{dy}{dx} &= \frac{1}{\cos^2 x} \\
+  \frac{dy}{dx} &= e^x \\
+  \frac{dy}{dx} &= \frac{1}{x} \\
+  \frac{dy}{dx} &= a^x\log a \\
+  \frac{dy}{dx} &= f' \left(g \left(x \right) \right) \cdot g' \left(x\right) \\
+  \frac{dy}{dx} &= f' \left(x \right)g \left(x \right) + f \left(x \right)g' \left(x \right) \\
+  \frac{dy}{dx} &= \frac{f' \left(x \right)g \left(x \right) - f \left(x \right)g' \left(x \right)}{\left(g \left(x \right)\right)^2} \\
+  \frac{dy}{dx} &= x^x\left(1+\log x\right) \\
+  \frac{dy}{dx} &= f \left(x \right) \\
+  \frac{dy}{dx} &= \frac{x}{y} \\
+  \frac{dy}{dx} &= \frac{1}{f' \left(y\right)} \\
+  \frac{dy}{dx} &= \frac{f' \left(t\right)}{g' \left(t\right)} \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*} % 積分解
+  \int x^r \,dx \: \left(r \neq -1\right) &= \frac{1}{r+1} x^{r+1} +C \\
+  \int \frac{1}{x} \,dx &= \log x +C \\
+  \int e^x \,dx &= e^x +C \\
+  \int \log x \,dx &= x\log x -x +C \\
+  \int \sin x \,dx &= -\cos x +C \\
+  \int \cos x \,dx &= \sin x +C \\
+  \int \tan x \,dx &= -\log \left\lvert \cos x \right\rvert +C \\
+  \int \frac{dx}{\cos^2 x} &= \tan x +C \\
+  \int \frac{dx}{\sin^2 x} &= -\frac{1}{\tan x} +C \\
+  \int a^x \,dx \: \left(a>0, a \neq 1\right) &= \frac{a^x}{\log a} +C \\
 \end{flalign*}
 
 \end{document}
