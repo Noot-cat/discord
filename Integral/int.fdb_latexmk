@@ -1,31 +1,6 @@
 # Fdb version 4
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-["pdflatex"] 1745451496.56651 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745451502.07642 2
-  "c:/discord/Integral/int.tex" 1745451485 22761 9e0a266c868781b86df9dede9b47268e ""
-=======
-["pdflatex"] 1745451456.6407 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745451462.55947 2
-  "c:/discord/Integral/int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-["pdflatex"] 1745451456.6407 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745451462.55947 2
-  "c:/discord/Integral/int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-["pdflatex"] 1745451456.6407 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745451462.55947 2
-  "c:/discord/Integral/int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-["pdflatex"] 1745451456.6407 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745451462.55947 2
-  "c:/discord/Integral/int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-["pdflatex"] 1745451456.6407 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745451462.55947 2
-  "c:/discord/Integral/int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
+["pdflatex"] 1745400423.38982 "c:/discord/Integral/int.tex" "int.pdf" "int" 1745400428.1117 2
+  "c:/discord/Integral/int.tex" 1745400401 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
   "c:/tools/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty" 1735701675 8356 7bbb2c2373aa810be568c29e333da8ed ""
   "c:/tools/TinyTeX/texmf-dist/tex/latex/base/fleqn.clo" 1735701677 4807 4a9ac821b9dc64f850693df4c0259635 ""
   "c:/tools/TinyTeX/texmf-dist/tex/latex/tools/.tex" 1735701690 1426 cd6cd1667b1a28ea51b9de2c0b64d363 ""
@@ -36,33 +11,8 @@
   "c:/tools/TinyTeX/texmf-dist/web2c/texmf.cnf" 1735701629 42021 a58d36c7ede3d2fc9f93da62d691ddff ""
   "c:/tools/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1735992664 1973205 173e41e2282b2f6c982497cef9bc26f2 ""
   "c:/tools/TinyTeX/texmf.cnf" 1735701645 903 164c5b127cd0d6dc91abad2f62421ea2 ""
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  "int.aux" 1745451496 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "int.tex" 1745451485 22761 9e0a266c868781b86df9dede9b47268e ""
-=======
-  "int.aux" 1745451456 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-  "int.aux" 1745451456 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-  "int.aux" 1745451456 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-  "int.aux" 1745451456 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
-=======
-  "int.aux" 1745451456 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "int.tex" 1745451442 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
->>>>>>> Stashed changes
+  "int.aux" 1745400423 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "int.tex" 1745400401 13602 d4bdc24eb6ff8a94b6f1adccf6d3be12 ""
   (generated)
   "int.aux"
   "int.log"
