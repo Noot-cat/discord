@@ -497,4 +497,21 @@
   I &= \frac{e^x}{2}\left(\sin x + \cos x\right) +C \\
 \end{flalign*}
 
+\begin{flalign*}
+\int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx \\
+分数関数なので,取り敢えずまず分母の微分をかんがえてみる. \\
+(\cos x + \sin x)'=\cos x -\sin x \\
+\quad定積分の値が求めやすい関数になるように勝手に定積分を足す　\\
+\int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx ＋ \int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx
+=\frac{\pi}{4} \\
+\int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx =I,\int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx = J \quad とすると \\
+I+J=\frac{\pi}{4} \\
+IとJを求めるために,IとJを組み合わせて積分しやすい形をつくりたい. \\
+ここで,(\cos x + \sin x)'=\cos x -\sin x であるから,I-Jが簡単に求められる. \\
+I-J=\int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx - \int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx \\
+&=\left[\log |\cos x + \sin x|\right]_{0}^{\frac{\pi}{4}} \\
+&=\left[\log |\sqrt 2 \sin (x+ \frac{\pi}{4})|\right]_{0}^{\frac{\pi}{4}} \\
+&=\frac{1}{2}\log 2 \\
+\therefore I=\frac{\pi}{8}+\frac{1}{4}\log 2
+\end{flalign*}
 \end{document}

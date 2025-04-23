@@ -1,0 +1,5 @@
+PWD c:/discord/Integral
+INPUT c:/tools/TinyTeX/texmf.cnf
+INPUT c:/tools/TinyTeX/texmf-dist/web2c/texmf.cnf
+INPUT c:/tools/TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/discord/Integral/int.tex
