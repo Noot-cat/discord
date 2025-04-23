@@ -73,9 +73,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \tan x \,dx &\  \quad \tan の一次式→ \frac{\sin x}{\cos x}で一次式に \\
-  \int \tan x \,dx 
-  &= \int \frac{\sin x}{\cos x} \,dx \quad 分数関数はまず最初に→分母の微分を考える \\
+  \int \tan x \,dx &\  \quad\tanの一次式→ \frac{\sin x}{\cos x}で一次式に \\
+  \int \tan x \,dx &= \int \frac{\sin x}{\cos x} \,dx \:\quad 分数関数→分母の微分を考える \\
   &= - \int \frac{- \sin x}{\cos x} \,dx \\
   &= - \log \left\lvert \cos x \right\rvert + C \:  \\
 \end{flalign*}
@@ -107,9 +106,8 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\sin^2 x} \,dx & \ \sin が\cos だったら都合がいい→\frac{\pi}{2}で\cos に \\ 
-  \int \frac{dx}{\sin^2 x} 
-  &= \int \frac{dx}{\cos^2 \left(\frac{\pi}{2} - x \right)} \\
+  \int \frac{dx}{\sin^2 x} \,dx & \ \sinがcosだったら都合がいい→\frac{\pi}{2}でcosに \\ 
+  \int \frac{dx}{\sin^2 x} &= \int \frac{dx}{\cos^2 \left(\frac{\pi}{2} - x \right)} \\
   &= - \tan\left(\frac{\pi}{2} - x \right) + C \\
   &= - \frac{1}{\tan x} + C \ \\
 \end{flalign*}
@@ -117,16 +115,11 @@
 \newpage
 
 \begin{flalign*}
-  \int_{-1}^{1} \sqrt{1-x^2} \,dx \quad \sqrt{(\qquad)^2} 
-  &=|\qquad| としたい \\
-  ここで,1-\sin^2 t = \cos^2 tである \\
-  また,1-x^2 \ge 0 \Leftrightarrow -1 \le x \le 1 であるから, x=\sin t とおける \\
-  x 
-  &= \sin t \: とする \\
-  dx 
-  &= \cos t \,dt \\
-  \int_{-1}^{1} \sqrt{1-x^2} \,dx 
-  &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \sqrt{1-\sin^2 t} \cos t \,dt \\
+  \int_{-1}^{1} \sqrt{1-x^2} \,dx \quad \sqrt{|\qquad|^2} &=|\qquad| としたい.\\
+  ここで,1-\sin^2t=\cos^2tである.また,1-x^2\ge0より,-1\le x \le1 であるから, x=\sin x とおける. \\
+  x &= \sin t \: とする \\
+  dx &= \cos t \,dt \\
+  \int_{-1}^{1} \sqrt{1-x^2} \,dx &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \sqrt{1-\sin^2 t} \cos t \,dt \\
   &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \left\lvert \cos t \right\rvert \cos t \,dt \\
   &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \cos^2 t \,dt \\
   &= \int_{- \frac{\pi}{2}}^{\frac{\pi}{2}} \frac{1+\cos 2t}{2} \,dt \\
@@ -143,11 +136,10 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{1} \frac{dx}{1+x^2} & \quad 分母を単項式にしたい \\
-  ここで,1+\tan^2 t = \frac{1}{\cos^2t}である \\
-  また,(\tan t)' = \frac{1}{\cos^2 t}であるから,x=\tan tとする \\
-  %x &= \tan t \: とおく \\
-  1+x^2 &= \frac{1}{\cos^2 t} \\
+  \int_{0}^{1} \frac{\,dx}{1+x^2} \quad分母を単項式にしたい.\\
+  ここで,1+\tan^2t=\frac{1}{\cos^2t}である.また,(\tan t)'=\frac{1}{\cos^2t}であるから,x=\tan tとする\\
+  x &= \tan t \: とおく \\
+  \frac{1}{1+x^2} &= \frac{1}{\cos^2 t} \\
   dx &= \frac{dt}{\cos^2 t} \\
   \int_{0}^{1} \frac{\,dx}{1+x^2} 
   &= \int_{0}^{\frac{\pi}{4}} \frac{\frac{1}{\cos^2 t}}{\frac{1}{\cos^2 t}} \,dt \\
@@ -182,9 +174,8 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx 
-  &= \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \\
-  \quad a+b-xを含む,下端が0,指数関数の式→KingProperty \\
+  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \quad a+b-xを含む,下端が0,指数関数の式→KingProperty \\
+  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx
   &= \int_{0}^{e} \frac{e^{e-x}}{e^x+e^{e-x}} \,dx \\
   I 
   &= \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \: とすると \\
@@ -210,12 +201,21 @@
   &= \frac{e}{2} \\
 \end{flalign*}
 
+\begin{flalign*}
+\int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx\quad 指数関数の定数部分は分離\\
+=\int_{0}^{e} \frac{e^x}{e^e \cdot e^{-x}+e^x} \,dx\quad 指数の符号は揃える,指数関数の分数関数→分母分子にe^xをかける\\
+指数関数の分数関数→微分接触をつくる\\
+&=\frac{1}{2}\int_{0}^{e}\frac{2e^{2x}}{e^e+e^{2x}}\\
+=\frac{1}{2}\left[\log (e^e+e^{2x})\right]_{0}^{e} \quad(\because e^e+e^{2x}\ge 0)\\
+=\frac{1}{2}\log \frac{e^e+e^{2e}}{e^e+1}\\
+&=\frac{1}{2}\log \frac{e^e(1+e^{e})}{e^e+1}\\
+&=\frac{e}{2}
+\end{flalign*}
+
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\sin^4 x} \quad f(\sin^2 x,\cos^2 x,\tan x)→g(\tan x) \cdot \frac{1}{\cos^2 x}に \\
-  \int \frac{dx}{\sin^4 x} 
-  &= \int \frac{dx}{\tan^4 x \cos^4 x} \\
+  \int \frac{dx}{\sin^4 x} &= \int \frac{dx}{\tan^4 x \cos^4 x}\quad f(\sin^2x,\cos^2x,\tan x)→g(\tan x)に \\
   &= \int \frac{1}{\tan^4 x} \left(1+\tan^2 x \right)\frac{dx}{\cos^2 x} \\
   t &= \tan x \: とする \\
   dt &= \frac{dx}{\cos^2 x} \\
@@ -248,11 +248,10 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx & \quad 積分区間の下端が0,三角関数の式で積分区間が{\frac{n\pi}{2}}→KingProperty \\
-  I 
-  &= \int_{0}^{\frac{\pi}{2}} \sin^2 x \,dx \\
-  &= \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \\
-  2I 
+  \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \quad積分区間の下端が0,三角関数の式で積分区間が{\frac{n\pi}{2}}→King Property\\
+  \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx &= \int_{0}^{\frac{\pi}{2}} \sin^2 x \,dx \\
+  I &= \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \\
+  2I &= \int_{0}^{\frac{\pi}{2}} \cos^2 x + \sin^2 x \,dx \\
   &= \int_{0}^{\frac{\pi}{2}} \,dx \\
   &= \frac{\pi}{2} \\
   \therefore I 
@@ -262,12 +261,7 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{\log \left(\sin x \right)}{\tan x} \,dx \\
-  \tan の一次式 
-  &→ \frac{\sin}{\cos},真数,位相が複雑 \\
-  &→ =tとして微分接触を疑う \\
-  \int \frac{\log \left(\sin x \right)}{\tan x} \,dx 
-  &= \int \frac{\cos x \log \left(\sin x \right)}{\sin x} \,dx \\
+  \int \frac{\log \left(\sin x \right)}{\tan x} \,dx &= \int \frac{\cos x \log \left(\sin x \right)}{\sin x} \,dx \\
   &= \int \frac{\log t}{t} \,dt \\
   &= \frac{1}{2}\left(\log t \right)^2 +C \\
   &= \frac{1}{2}\left(\log \left(\sin x \right) \right)^2 +C \\
@@ -311,9 +305,8 @@
 \begin{flalign*}
   \int_{0}^{1} \frac{dx}{x^2+3} & \quad x^2+a^2を含む→x=a\tan t \\
   x &= \sqrt{3}\tan t \: とおく \\
-  dx &= \frac{\sqrt3 dt}{\cos^2 t} \\
-  \int_{0}^{1} \frac{dx}{x^2+3} 
-  &= \int_{0}^{\frac{\pi}{6}} \frac{\frac{\sqrt{3}}{\cos^2 t}}{3\tan^2 t +3} \,dt \\
+  dx &= \frac{dt}{\cos^2 t} \\
+  \int_{0}^{1} \frac{dx}{x^2+3} &= \int_{0}^{\frac{\pi}{6}} \frac{\frac{\sqrt{3}}{\cos^2 t}}{3\tan^2 t +3} \,dt \\
   &= \int_{0}^{\frac{\pi}{6}} \frac{\frac{\sqrt{3}}{\cos^2 t}}{3\left(\frac{1}{\cos^2 t}\right)} \,dt \\
   &= \frac{1}{\sqrt{3}} \int_{0}^{\frac{\pi}{6}} \,dt \\
   &= \frac{\pi}{6\sqrt{3}} \\ 
@@ -341,28 +334,24 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\cos^3 x} & 三角関数は2乗に強い,三角関数や指数関数の分数関数 \\
-  &→分母分子に同じもの(\cos x)をかける(分母を優先) \\
-  \int \frac{dx}{\cos^3 x} 
-  &= \int \frac{\cos x}{\cos^4 x} \,dx \\
+  \int \frac{dx}{\cos^3 x} 三角関数は2乗に強い,三角関数や指数関数の分数関数,分母を優先
+  \\→分母分子に同じもの(\cos x)をかける\\
+  \int \frac{dx}{\cos^3 x} &= \int \frac{\cos x}{\cos^4 x} \,dx \\
   &= \int \frac{\cos x}{\left(1-\sin^2 x \right)^2} \,dx \\
   &= \int \frac{dt}{\left(1-t^2 \right)^2} \: \left(t = \sin x \right) \\
-  \frac{1}{1-t^2} 
-  &= \frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t} \right) \\
-  \frac{1}{\left(1-t^2 \right)^2} 
-  &= \left(\frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t}\right) \right)^2 \\
+  \frac{1}{\left(1-t^2 \right)} &= \frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t} \right) \\
+  \left(\frac{1}{\left(1-t^2 \right)}\right)^2 &= \left(\frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t}\right) \right)^2 \\
   &= \frac{1}{4}\left(\frac{1}{\left( 1+t \right)^2} + \frac{1}{\left( 1-t \right)^2} + \frac{2}{1-t^2} \right) \\
   &= \frac{1}{4}\left(\frac{1}{\left(1+t\right)^2} + \frac{1}{\left(1-t\right)^2} + \frac{1}{1+t} + \frac{1}{1-t} \right) \\
-  \int \frac{dt}{\left(1-t^2 \right)^2} 
-  &= \frac{1}{4} \int \left(\frac{1}{\left(1+t\right)^2} + \frac{1}{\left(1-t\right)^2} + \frac{1}{1+t} + \frac{1}{1-t} \right) \,dt \\
-  &= \frac{1}{4} \left( \frac{1}{1-t} - \frac{1}{1+t} + \log \left\lvert \frac{t+1}{t-1} \right\rvert \right) +C \\
-  &= \frac{1}{4} \left( \frac{1}{1-\sin x} - \frac{1}{1+\sin x} + \log \left\lvert \frac{\sin x+1}{\sin x-1} \right\rvert \right) +C \\
+  \int \frac{dt}{\left(1-t^2 \right)^2} &= \frac{1}{4} \int \left(\frac{1}{\left(1+t\right)^2} + \frac{1}{\left(1-t\right)^2} + \frac{1}{1+t} + \frac{1}{1-t} \right) \,dt \\
+  &= \frac{1}{4} \left( \frac{1}{1+t} - \frac{1}{1-t} + \log \left\lvert \frac{1+t}{1-t} \right\rvert \right) +C \\
+  &= \frac{1}{4} \left( \frac{1}{1+\sin x} - \frac{1}{1-\sin x} + \log \left\lvert \frac{1+\sin x}{1-\sin x} \right\rvert \right) +C \\
 \end{flalign*}
 
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\sin^4 x} \quad f(\sin^2 x,\cos^2 x,\tan x)→t=\tan x \\
+  \int \frac{dx}{\sin^4 x} \quad f(sin^2x,\cos^2x,\tan x)→t=\tan x\\
   t &= \tan x \\
   \cos^2 x &= \frac{1}{1+\tan^2 x} \\
   &= \frac{1}{1+t^2} \\
@@ -381,8 +370,7 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{2\pi} \sqrt{1+\cos x} \,dx \quad \sqrt{(\qquad)^2} 
-  &= |\qquad| としたい.\\
+  \int_{0}^{2\pi} \sqrt{1+\cos x} \,dx \quad \sqrt{|\qquad|^2} &=|\qquad| としたい.\\
   ここで,1+\cos x=2\cos^2 \frac{x}{2}である.\\
   \int_{0}^{\frac{\pi}{3}} \sqrt{1+\cos x} \,dx \\
   &= \int_{0}^{\frac{\pi}{3}} \sqrt{2\cos^2 \frac{x}{2}} \,dx \\
@@ -394,9 +382,8 @@
 \newpage
 
 \begin{flalign*}
-  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx \quad \sin が\cos だと都合がいい→\frac{\pi}{2}で\cos に \\
-  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx 
-  &= \int_{0}^{\frac{\pi}{3}} \sqrt{1+\cos \left(\frac{\pi}{2}-x\right)} \,dx \\
+  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx\quad \sinが\cos だと都合がいい→\frac{\pi}{２}\\
+  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx &= \int_{0}^{\frac{\pi}{3}} \sqrt{1+\cos \left(\frac{\pi}{2}-x\right)} \,dx \\
   &= \sqrt{2} \int_{0}^{\frac{\pi}{3}} \left\lvert \cos \left( \frac{\pi}{4}-\frac{x}{2} \right) \right\rvert \,dx \\
   &= -2\sqrt{2} \left[ \sin \left( \frac{\pi}{4}-\frac{x}{2} \right) \right]_{0}^{\frac{\pi}{3}} \\
   &= -2\sqrt{2} \left( \frac{\sqrt{6}-\sqrt{2}}{4} - \frac{1}{\sqrt{2}} \right) \\
@@ -486,17 +473,24 @@
   &= \frac{1}{3}\log 2 +\frac{\pi}{3\sqrt{3}} \\
 \end{flalign*}
 
-\newpage
-
 \begin{flalign*}
-  I &= \int e^x \cos x \,dx \\
-  &= e^x \sin x - \int e^x \sin x \,dx \\
-  &= e^x \sin x - \left(e^x \cdot -\cos x - \int e^x \cdot -\cos x \,dx \right) \\
-  &= e^x \sin x + e^x \cos x - \int e^x \cos x \,dx \\
-  2I &= e^x \sin x + e^x \cos x \\
-  I &= \frac{e^x}{2}\left(\sin x + \cos x\right) +C \\
+\int\frac{\cos^2 x}{\sin x-1}\,dx &=\int\frac{(1-\sin x)(1+\sin x)}{\sin x-1} \,dx \\
+&=-\int(1+\sin x) \,dx \\
+&=\cos x-x+C
 \end{flalign*}
 
+\begin{flalign*}
+\int \cos x \sin x \cos 2x \,dx&=\frac{1}{2}\int \sin 2x \cos 2x \\
+&=\frac{1}{4}\int\sin 4x\,dx\\
+&=-\frac{1}{16}\cos 4x+C
+\end{flalign*}
+
+\begin{flalign*}
+  \int_{0}^{\frac{\pi}{2}} \sin 6x\cos 4x\,dx&=\frac{1}{2}\int_{0}^{\frac{\pi}{2}}(\sin 10x+\sin2x)\,dx\\
+  &=\frac{1}{2}\left[-\frac{1}{10}\cos 10x-\frac{1}{2}\cos 2x\right]_{0}^{\frac{\pi}{2}}\\
+  &=\frac{3}{5}
+\end{flalign*}
+\newpage
 \begin{flalign*}
 \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx \\
 分数関数なので,取り敢えずまず分母の微分をかんがえてみる. \\
@@ -514,4 +508,72 @@ I-J=\int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx - \int_{0}^{\fr
 &=\frac{1}{2}\log 2 \\
 \therefore I=\frac{\pi}{8}+\frac{1}{4}\log 2
 \end{flalign*}
+=======
+=======
+>>>>>>> 1aeb7f7a69eb971cb7bc026a7c44cafd3b85ad79
+
+\begin{flalign*}
+  \int \frac{dx}{\sqrt{x}+\sqrt{x+2}} &= \int \frac{\sqrt{x+2}-\sqrt{x}}{2} \,dx \\
+  &= \frac{1}{3}\left(x+2\right)^{\frac{3}{2}} -\frac{1}{3}x^{\frac{3}{2}}+C \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*}
+  \int_{0}^{\frac{\pi}{2}} \sqrt{\frac{1-\cos x}{1+\cos x}} \,dx &= \int_{0}^{\frac{\pi}{2}} \sqrt{\tan^2 \frac{x}{2}} \,dx \\
+  &= \int_{0}^{\frac{\pi}{2}} \left\lvert \tan \frac{x}{2} \right\rvert \,dx \\
+  &= -2 \left[\log \left\lvert \cos \frac{x}{2} \right\rvert \right]_{0}^{\frac{\pi}{2}} \\
+  &= -2 \log \frac{1}{\sqrt{2}} \\
+  &= \log 2 \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*}
+  \int_{0}^{1} \frac{dx}{1+x^3} \quad 分母が因数分解できる→BBB \\
+  \int_{0}^{1} \frac{dx}{1+x^3} &= \frac{1}{3} \int_{0}^{1} \left(\frac{1}{1+x}-\frac{x-2}{x^2-x+1}\right) \,dx \\
+  \frac{1}{3} \int_{0}^{1} \frac{dx}{1+x} &= \frac{1}{3}\left[\log |1+x|\right]_{0}^{1} \\
+  &= \frac{1}{3} \log 2 \\
+  - \frac{1}{3} \int_{0}^{1} \frac{x-2}{x^2-x+1} \,dx\quad 分母が2次式で分子が1次式→微分接触をつくる\\
+  \frac{x-2}{x^2-x+1} &= \frac{1}{2}\left(\frac{2x-4}{x^2-x+1}\right) \\
+  &= \frac{1}{2}\left(\frac{2x-1}{x^2-x+1}-\frac{3}{x^2-x+1}\right) \\
+  ※ \: 定数項ではなくxの係数を定数倍で合わせる \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*}
+  -\frac{1}{3} \int_{0}^{1} \frac{x-2}{x^2-x+1} \,dx &= - \frac{1}{6} \int_{0}^{1} \frac{2x-1}{x^2-x+1} + \frac{1}{6}\int_{0}^{1}\frac{3}{x^2-x+1} \,dx \\
+  \frac{1}{6} \int_{0}^{1} \frac{2x-1}{x^2-x+1} \,dx =\frac{1}{6}\left[\log |x^2-x+1|\right]_{0}^{1}\\
+  &= 0\\
+  ※\int_{0}^{1} \frac{2x-1}{x^2-x+1} \,dx &= \int_{0}^{1} \frac{2(1-x)-1}{(1-x)^2-(1-x)+1} \,dx \\
+  =\int_{0}^{1} \frac{-2x+1}{x^2-x+1} \,dx \\
+   \therefore I&=-I \\
+  2I&=0 \\
+  \therefore \int_{0}^{1} \frac{2x-1}{x^2-x+1} \,dx &= 0　\quad 申し訳ないが解説不能.f(x)=x^2-x+1=f(1-x)であることを覚えておくと積分に限らずどこかで使えるかも.
+  \end{flalign*}
+
+  \newpage
+
+  \begin{flalign*}
+  \frac{1}{6} \int \frac{3}{x^2-x+1} \quad 分子が定数で,分母がD < 0の 2次式→平方完成 \& (x-p)=a \tan t \\
+  \frac{1}{2} \int_{0}^{1} \frac{dx}{\left(x-\frac{1}{2}\right)^2+\frac{3}{4}} \\
+  x-\frac{1}{2} &= \frac{\sqrt{3}}{2}\tan t \\
+  dx &= \frac{\sqrt{3}}{2\cos^2 t} \,dt \\
+  \frac{1}{2} \int_{0}^{1} \frac{dx}{\left(x-\frac{1}{2}\right)^2+\frac{3}{4}} &= \frac{1}{2} \cdot \frac{4}{3} \cdot \frac{\sqrt{3}}{2} \int_{- \frac{\pi}{6}}^{\frac{\pi}{6}} \,dt \\
+  &= \frac{\pi}{3\sqrt{3}} \\
+  \therefore \int_{0}^{1} \frac{dx}{1+x^3} &= \frac{1}{3}\log 2 +\frac{\pi}{3\sqrt{3}} \\
+\end{flalign*}
+
+\newpage
+
+\begin{flalign*}
+  I &= \int e^x \cos x \,dx \\
+  &= e^x \sin x - \int e^x \sin x \,dx \\
+  &= e^x \sin x - \left(e^x \cdot -\cos x - \int e^x \cdot -\cos x \,dx \right) \\
+  &= e^x \sin x + e^x \cos x - \int e^x \cos x \,dx \\
+  2I &= e^x \sin x + e^x \cos x \\
+  I &= \frac{e^x}{2}\left(\sin x + \cos x\right) +C \\
+\end{flalign*}
+
 \end{document}
