@@ -1,4 +1,4 @@
-\documentclass[fleqn]{ltjsarticle}
+wq
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{tikz}
@@ -7,10 +7,6 @@
 \usepackage{mleftright}
 \everymath{\displaystyle}
 \mleftright
-
-\title{Integral(tmp)}
-\author{Noot}
-\date{04/20/2025}
 
 \begin{document}
 
@@ -74,10 +70,8 @@
 \begin{flalign*}
   \int \tan x \,dx &\  \quad \tan の一次式→ \frac{\sin x}{\cos x}で一次式に \\
   \int \tan x \,dx &= \int \frac{\sin x}{\cos x} \,dx \: \quad 分数関数はまず最初に→分母の微分を考える \\
-  &= - \int \frac{- \sin x}{\cos x} \,dx \\
   &= - \log \left\lvert \cos x \right\rvert + C \: \\
 \end{flalign*}
-
 \newpage
 
 \begin{flalign*}
@@ -171,6 +165,7 @@
 
 \begin{flalign*}
   \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx & \quad a+b-xを含む,下端が0,指数関数の式→King \; Property \\
+  \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \quad a+b-xを含む,下端が0,指数関数を含む式→KingProperty \\
   \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx
   &= \int_{0}^{e} \frac{e^{e-x}}{e^x+e^{e-x}} \,dx \\
   I &= \int_{0}^{e} \frac{e^x}{e^{e-x}+e^x} \,dx \: とすると \\
@@ -229,7 +224,7 @@
 \begin{flalign*}
   \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \quad 積分区間の下端が0,三角関数の式で積分区間が{\frac{n\pi}{2}}→King\;Property\\
   I &= \int_{0}^{\frac{\pi}{2}} \sin^2 x \,dx \\
-   &= \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \\
+  &= \int_{0}^{\frac{\pi}{2}} \cos^2 x \,dx \\
   2I &= \int_{0}^{\frac{\pi}{2}} \,dx \\
   &= \frac{\pi}{2} \\
   \therefore I &= \frac{\pi}{4} \\
@@ -306,11 +301,10 @@
 \newpage
 
 \begin{flalign*}
-  \int \frac{dx}{\cos^3 x} & 三角関数は2乗に強い,三角関数や指数関数の分数関数 \\
   &→分母分子に同じもの(\cos x)をかける(分母を優先)\\
+  \int \frac{dx}{\cos^3 x} 三角関数は2乗に強い,三角関数や指数関数の分数関数,分母を優先 \\
   \int \frac{dx}{\cos^3 x} &= \int \frac{\cos x}{\cos^4 x} \,dx \\
   &= \int \frac{\cos x}{\left(1-\sin^2 x \right)^2} \,dx \\
-  &= \int \frac{dt}{\left(1-t^2 \right)^2} \: \left(t = \sin x \right) \\
   \frac{1}{1-t^2} &= \frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t} \right) \\
   \frac{1}{\left(1-t^2 \right)^2} &= \left(\frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t}\right) \right)^2 \\
   &= \frac{1}{4}\left(\frac{1}{\left( 1+t \right)^2} + \frac{1}{\left( 1-t \right)^2} + \frac{2}{1-t^2} \right) \\
@@ -318,6 +312,8 @@
   \int \frac{dt}{\left(1-t^2 \right)^2} &= \frac{1}{4} \int \left(\frac{1}{\left(1+t\right)^2} + \frac{1}{\left(1-t\right)^2} + \frac{1}{1+t} + \frac{1}{1-t} \right) \,dt \\
   &= \frac{1}{4} \left( \frac{1}{1-t} - \frac{1}{1+t} + \log \left\lvert \frac{t+1}{t-1} \right\rvert \right) +C \\
   &= \frac{1}{4} \left( \frac{1}{1-\sin x} - \frac{1}{1+\sin x} + \log \left\lvert \frac{\sin x+1}{\sin x-1} \right\rvert \right) +C \\
+  &= \frac{1}{4} \left( \frac{1}{1+t} - \frac{1}{1-t} + \log \left\lvert \frac{1+t}{1-t} \right\rvert \right) +C \\
+  &= \frac{1}{4} \left( \frac{1}{1+\sin x} - \frac{1}{1-\sin x} + \log \frac{1+\sin x}{1-\sin x} \right\rvert \right) +C \\
 \end{flalign*}
 
 \newpage
@@ -354,6 +350,7 @@
 
 \begin{flalign*}
   \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx \quad \sin が\cos だと都合がいい→\frac{\pi}{2}で\cos に\\
+  \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx\quad \sinが\cos だと都合がいい→\frac{\pi}{2}\\
   \int_{0}^{\frac{\pi}{3}} \sqrt{1+\sin x} \,dx &= \int_{0}^{\frac{\pi}{3}} \sqrt{1+\cos \left(\frac{\pi}{2}-x\right)} \,dx \\
   &= \sqrt{2} \int_{0}^{\frac{\pi}{3}} \left\lvert \cos \left( \frac{\pi}{4}-\frac{x}{2} \right) \right\rvert \,dx \\
   &= -2\sqrt{2} \left[ \sin \left( \frac{\pi}{4}-\frac{x}{2} \right) \right]_{0}^{\frac{\pi}{3}} \\
@@ -382,6 +379,21 @@
 
 \begin{flalign*}
   \int \frac{\sin x\cos x}{1+\sin^2 x} \,dx &= \frac{1}{2}\log (1+\sin^2 x)+C \quad (\because 1+\sin^2 x \ge 0)
+  \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx \\
+  分数関数なので,取り敢えずまず分母の微分を考えておく. \\
+  (\cos x + \sin x)'=\cos x -\sin x \\
+  \quad定積分の値が求めやすい関数になるように勝手に定積分を足す　\\
+  \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx ＋ \int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx
+  =\frac{\pi}{4} \\
+  \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx =I,\int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx = J \quad とすると \\
+  I+J=\frac{\pi}{4} \\
+  IとJを求めるために,IとJを組み合わせて他に積分しやすい形をつくりたい. \\
+  ここで,(\cos x + \sin x)'=\cos x -\sin x であるから,I-Jが簡単に求められる. \\
+  I-J=\int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx - \int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx \\
+  &=\left[\log |\cos x + \sin x|\right]_{0}^{\frac{\pi}{4}} \\
+  &=\left[\log |\sqrt 2 \sin (x+ \frac{\pi}{4})|\right]_{0}^{\frac{\pi}{4}} \\
+  &=\frac{1}{2}\log 2 \\
+  \therefore I=\frac{\pi}{8}+\frac{1}{4}\log 2
 \end{flalign*}
 
 \begin{flalign*}
