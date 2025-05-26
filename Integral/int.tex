@@ -307,7 +307,8 @@
   \int \frac{dx}{\cos^3 x} &= \int \frac{\cos x}{\cos^4 x} \,dx \\
   &= \int \frac{\cos x}{\left(1-\sin^2 x \right)^2} \,dx \\
   \frac{1}{1-t^2} &= \frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t} \right) \\
-  \frac{1}{\left(1-t^2 \right)^2} &= \left(\frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t}\right) \right)^2 \\
+  \frac{1}{\left(1-t^2 \right)^2} 
+  &= \left(\frac{1}{2}\left(\frac{1}{1+t} + \frac{1}{1-t}\right) \right)^2 \\
   &= \frac{1}{4}\left(\frac{1}{\left( 1+t \right)^2} + \frac{1}{\left( 1-t \right)^2} + \frac{2}{1-t^2} \right) \\
   &= \frac{1}{4}\left(\frac{1}{\left(1+t\right)^2} + \frac{1}{\left(1-t\right)^2} + \frac{1}{1+t} + \frac{1}{1-t} \right) \\
   \int \frac{dt}{\left(1-t^2 \right)^2} \\
@@ -384,9 +385,9 @@
   \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx \\
   分数関数なので,取り敢えずまず分母の微分を考えておく. \\
   (\cos x + \sin x)'=\cos x -\sin x \\
-  \quad定積分の値が求めやすい関数になるように勝手に定積分を足す　\\
-  \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx ＋ \int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx
-  =\frac{\pi}{4} \\
+  \quad定積分の値が求めやすい関数になるように勝手に定積分を足す \\
+  \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx &= \int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx \\
+  &=\frac{\pi}{4} \\
   \int_{0}^{\frac{\pi}{4}} \frac{\cos x}{\cos x + \sin x} \,dx =I,\int_{0}^{\frac{\pi}{4}} \frac{\sin x}{\cos x + \sin x} \,dx = J \quad とすると \\
   I+J=\frac{\pi}{4} \\
   IとJを求めるために,IとJを組み合わせて他に積分しやすい形をつくりたい. \\
